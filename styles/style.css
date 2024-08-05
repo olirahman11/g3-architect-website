@@ -141,7 +141,7 @@ main {
         padding: 20px;
     }
 
-    nav {
+    nav{
         flex-direction: column;
         text-align: center;
 
@@ -149,6 +149,16 @@ main {
 
     nav ul {
         margin: 20px auto;
+    }
+    .teams-img-container{
+        grid-template-columns: 1fr;
+    }
+    .teams-container{
+        flex-direction: column;
+        
+    }
+    .teams-content{
+        padding: 20px;
     }
 
 
@@ -171,5 +181,9 @@ main {
 
     header {
         padding: 50px;
+    }
+    .teams-container{
+        flex-direction: column;
+        
     }
 }
