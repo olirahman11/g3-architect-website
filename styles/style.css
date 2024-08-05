@@ -86,7 +86,7 @@ main {
 }
 
 
-/* features container started */
+/* teams container started */
 .teams-title {
     font-family: Work Sans;
     font-size: 45px;
@@ -117,19 +117,67 @@ main {
     color: rgb(255, 144, 14);
     font-weight: 700;
 }
-.teams-container{
+
+.teams-container {
     display: flex;
     align-items: center;
     margin-top: 5.3rem;
 }
-.teams-content{
-    padding: 0px 70px
-    
+
+.teams-content {
+    padding: 0px 70px;
 }
-.teams-img-container{
+
+.teams-img-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem ;
+    gap: 1.5rem;
+}
+
+/* facts section started */
+
+.facts-title {
+    color: rgb(19, 19, 19);
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.facts-description {
+    color: rgb(114, 114, 114);
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.card {
+    border: 1px solid rgb(255, 144, 14);
+    border-radius: 8px;
+    text-align: center;
+    padding: 40px 35px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-title {
+    color: rgb(66, 66, 66);
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+
+.card-description {
+    color: rgb(114, 114, 114);
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 5px;
 }
 
 /* media quaries */
@@ -141,7 +189,7 @@ main {
         padding: 20px;
     }
 
-    nav{
+    nav {
         flex-direction: column;
         text-align: center;
 
@@ -150,15 +198,36 @@ main {
     nav ul {
         margin: 20px auto;
     }
-    .teams-img-container{
+
+    .teams-img-container {
         grid-template-columns: 1fr;
     }
-    .teams-container{
+
+    .teams-container {
         flex-direction: column;
+
+    }
+
+    .teams-content {
+        padding:  20px;
+    }
+
+    .card-container{
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+        
+
+    }
+    .facts-content{
+        padding: 0px 20px;
         
     }
-    .teams-content{
-        padding: 20px;
+    .facts-title{
+        font-size: 32px;
+    }
+    .facts-description{
+        font-size: 15px ;
     }
 
 
@@ -182,8 +251,18 @@ main {
     header {
         padding: 50px;
     }
-    .teams-container{
+
+    .teams-container {
         flex-direction: column;
-        
+
+    }
+    .facts-content{
+        padding-left: 70px;
+    }
+    .card-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        padding: 0px 70px;
     }
 }
